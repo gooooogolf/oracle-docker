@@ -41,3 +41,14 @@ CONTAINER ID        IMAGE                                            COMMAND    
 # Wait until it says (healthy) before trying anything else.
 ```
 
+4. Connecting from within the container
+```
+$ docker exec -it oracle bash -c "source /home/oracle/.bashrc; sqlplus /nolog"
+
+SQL*Plus: Release 12.2.0.1.0 Production on Sun Aug 19 10:17:06 2018
+
+Copyright (c) 1982, 2016, Oracle.  All rights reserved.
+
+SQL> 
+```
+
