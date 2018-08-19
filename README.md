@@ -1,7 +1,11 @@
 # oracle-docker
 Setup Oracle Database Server with Docker
 
-1. Pull image from docker store
+### Prerequsite ###
+* Install [Docker](https://store.docker.com/ "Get started with Docker")
+* [SQL Developer command line](http://www.oracle.com/technetwork/developer-tools/sqlcl/overview/index.html "SQL Developer command line")
+
+### 1. Pull image from docker store ###
 ```
 $ docker pull store/oracle/database-enterprise:12.2.0.1-slim
 $ docker images
