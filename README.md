@@ -5,7 +5,7 @@ Setup Oracle Database Server with Docker
 
 * [Docker](https://store.docker.com/ "Get started with Docker")
 * [SQL Developer command line](http://www.oracle.com/technetwork/developer-tools/sqlcl/overview/index.html "SQL Developer command line")
-* [Oracle SQL Developer] (https://www.oracle.com/database/technologies/appdev/sql-developer.html "Oracle SQL Developer") (Optional)
+* [Oracle SQL Developer](https://www.oracle.com/database/technologies/appdev/sql-developer.html "Oracle SQL Developer") (Optional)
 
 ### Setup ###
 
