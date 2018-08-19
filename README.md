@@ -54,11 +54,20 @@ SQL>
 
 5. Setup sqlcl for connect oracle database server
 ```
+cd ~/Downloads
+
+#Assuming you already have an /opt/oracle directory (I had one for the instant client)
+cp -r sqlcl /opt/oracle
+
+#Give sqlcl execute permission
+cd /oracle/sqlcl/bin
+chmod 755 sql
+
+#Add directory to path so can run anywhere in the command line:
 $ vi ~/.bash_profile 
 export SQLCL_HOME="/opt/oracle/sqlcl"
 export PATH="$SQLCL_HOME/bin:$PATH"
 
-# Setup sqlcl for connect oracle database server
 ```
 
 6. Connecting from outside the container
