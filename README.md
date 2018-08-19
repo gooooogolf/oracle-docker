@@ -118,6 +118,5 @@ User TEST altered.
 SQL> exit
 
 Disconnected from Oracle Database 12c Enterprise Edition Release 12.2.0.1.0 - 64bit Production
-$ 
 ```
 
