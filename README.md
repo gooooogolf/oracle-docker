@@ -60,7 +60,7 @@ cd ~/Downloads
 cp -r sqlcl /opt/oracle
 
 #Give sqlcl execute permission
-cd /oracle/sqlcl/bin
+cd /opt/oracle/sqlcl/bin
 chmod 755 sql
 
 #Add directory to path so can run anywhere in the command line:
