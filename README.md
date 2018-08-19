@@ -53,7 +53,14 @@ Copyright (c) 1982, 2016, Oracle.  All rights reserved.
 SQL> 
 ```
 
-5. Setup sqlcl for connect oracle database server
+5. Check port
+```
+# To review/confirm the port mapping run:
+$ docker port oracle
+1521/tcp -> 0.0.0.0:32122
+```
+
+6. Setup sqlcl for connect oracle database server
 ```
 cd ~/Downloads
 
@@ -71,12 +78,12 @@ export PATH="$SQLCL_HOME/bin:$PATH"
 
 ```
 
-6. Connecting from outside the container
+7. Connecting from outside the container
 ```
-# To connect to the CDB
-$ sql sys/Oradoc_db1@localhost:32122:orclcdb as sysdba
+To connect to the PDB to create schema to develop with
+$ sql sys/Oradoc_db1@localhost:32122/orclpdb1.localdomain as sysdba
 
-SQLcl: Release 18.2 Production on Sun Aug 19 17:30:34 2018
+SQLcl: Release 18.2 Production on Sun Aug 19 18:14:06 2018
 
 Copyright (c) 1982, 2018, Oracle.  All rights reserved.
 
