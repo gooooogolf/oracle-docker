@@ -52,3 +52,29 @@ Copyright (c) 1982, 2016, Oracle.  All rights reserved.
 SQL> 
 ```
 
+5. Setup sqlcl for connect oracle database server
+```
+$ vi ~/.bash_profile 
+export SQLCL_HOME="/opt/oracle/sqlcl"
+export PATH="$SQLCL_HOME/bin:$PATH"
+
+# Setup sqlcl for connect oracle database server
+```
+
+6. Connecting from outside the container
+```
+# To connect to the CDB
+$ sql sys/Oradoc_db1@localhost:32122:orclcdb as sysdba
+
+SQLcl: Release 18.2 Production on Sun Aug 19 17:30:34 2018
+
+Copyright (c) 1982, 2018, Oracle.  All rights reserved.
+
+Connected to:
+Oracle Database 12c Enterprise Edition Release 12.2.0.1.0 - 64bit Production
+
+
+SQL> 
+
+```
+
