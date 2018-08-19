@@ -30,11 +30,12 @@ Container | Container Port | Local Port |Description
 oracle | 1521 | 32122 | TNS listener for Oracle 12.2
 
 3. Check oracle status is up
-# Look in the STATUS column for the container. During "boot" time it will say "... (health: starting)".
-# Wait until it says (healthy) before trying anything else.
 ```
 $ docker ps
 CONTAINER ID        IMAGE                                            COMMAND                  CREATED             STATUS                   PORTS                               NAMES
 0d758fca6139        store/oracle/database-enterprise:12.2.0.1-slim   "/bin/sh -c '/bin/ba…"   2 minutes ago       Up 2 minutes (healthy)   5500/tcp, 0.0.0.0:32122->1521/tcp   oracle
+
+# Look in the STATUS column for the container. During "boot" time it will say "... (health: starting)".
+# Wait until it says (healthy) before trying anything else.
 ```
 
