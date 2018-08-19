@@ -94,4 +94,30 @@ Oracle Database 12c Enterprise Edition Release 12.2.0.1.0 - 64bit Production
 SQL> 
 
 ```
+8. Create account to develop
+```
+SQL> define new_user = 'test'
+SQL> create user &new_user. identified by &new_user. container = current;
+old:create user &new_user. identified by &new_user. container = current
+new:create user test identified by test container = current
+
+User TEST created.
+
+SQL> grant connect, resource, create any context to &new_user;
+old:grant connect, resource, create any context to &new_user
+new:grant connect, resource, create any context to test
+
+Grant succeeded.
+
+SQL> alter user &new_user quota unlimited on users;
+old:alter user &new_user quota unlimited on users
+new:alter user test quota unlimited on users
+
+User TEST altered.
+
+SQL> exit
+
+Disconnected from Oracle Database 12c Enterprise Edition Release 12.2.0.1.0 - 64bit Production
+$ 
+```
 
