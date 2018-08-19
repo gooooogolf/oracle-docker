@@ -11,7 +11,6 @@ Setup Oracle Database Server with Docker
 1. Pull image from docker store
 ```
 $ docker pull store/oracle/database-enterprise:12.2.0.1-slim
-downloading....
 $ docker images
 REPOSITORY                         TAG                 IMAGE ID            CREATED             SIZE
 store/oracle/database-enterprise   12.2.0.1-slim       27c9559d36ec        12 months ago       2.08GB
@@ -24,6 +23,9 @@ $ docker run -d -it --name oracle -p 32122:1521 store/oracle/database-enterprise
 $ docker ps
 CONTAINER ID        IMAGE                                            COMMAND                  CREATED             STATUS                            PORTS                               NAMES
 0d758fca6139        store/oracle/database-enterprise:12.2.0.1-slim   "/bin/sh -c '/bin/ba…"   6 seconds ago       Up 5 seconds (health: starting)   5500/tcp, 0.0.0.0:32122->1521/tcp   oracle
+
+# For all the examples below the name "oracle" was used.
+# You can use any name you want or just use the docker container ID to reference it
 ```
 Container | Container Port | Local Port |Description
 --- | --- | ---|---
